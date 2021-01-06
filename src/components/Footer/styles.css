@@ -1,0 +1,17 @@
+footer p {
+  color: var(--title);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+footer .links {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .links a {
+  color: #adadad;
+  text-decoration: none;
+  font-size: 15px;
+}

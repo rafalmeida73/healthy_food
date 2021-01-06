@@ -1,0 +1,48 @@
+.services .row {
+  margin-bottom: 0;
+}
+
+.imgServices {
+  padding: 0 !important;
+}
+
+.imgServices img{
+  width: 100%;
+}
+
+.serviceDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  height: 726px;
+}
+
+.serviceDesc h3 {
+  color: var(--title);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.serviceDesc p {
+  font-size: 15px;
+  margin-bottom: 40px;
+  color: #adadad;
+}
+
+.serviceDesc a {
+  background-color: var(--primary);
+  text-transform: none;
+}
+
+.serviceDesc a:hover,
+.serviceDesc a:active,
+.serviceDesc a:focus {
+  background-color: var(--primary-dark);
+}
+
+@media (min-width: 768px) {
+  .imgServices img{
+    width: auto;
+  }
+}

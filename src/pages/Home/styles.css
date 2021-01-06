@@ -1,0 +1,132 @@
+main {
+  height: 100vh;
+  background-image: url("../../assets/imgs/Illustration.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+main nav {
+  background: none;
+  box-shadow: none;
+}
+
+nav ul a:focus{
+  background-color: #fff !important;
+  color: var(--primary-dark);
+}
+
+#mobile-nav {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#mobile-nav li a {
+  color: #fff;
+}
+
+main nav .brand-logo {
+  color: #fff !important;
+  font-weight: bold;
+  padding-left: 10%;
+  font-size: 20px !important;
+}
+
+.mainRow {
+  height: 100%;
+  overflow: auto;
+}
+
+.mainText {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  color: var(--title);
+}
+
+.mainText h1 {
+  font-weight: bold;
+}
+
+.mainText :nth-child(1) {
+  margin-bottom: 30px;
+}
+
+.mainText form {
+  display: flex;
+}
+
+.mainText input {
+  border-bottom: none !important;
+  box-shadow: none !important;
+  margin-right: 10px;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: var(--title) !important;
+}
+
+.mainText button {
+  margin-left: 10px;
+  background-color: var(--primary);
+}
+
+.mainText button:hover,
+.mainText button:active,
+.mainText button:focus {
+  background-color: var(--primary-dark);
+}
+
+.mainText button i {
+  font-size: 20px;
+  margin-right: 0 !important;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1100px) {
+  main {
+    height: 100vh;
+    background-image: url("../../assets/imgs/Illustration.svg");
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  main nav {
+    background: none;
+    box-shadow: none;
+  }
+
+  main nav .brand-logo {
+    color: var(--primary) !important;
+    font-weight: bold;
+    padding-left: 10%;
+    font-size: 20px !important;
+  }
+
+  main nav a {
+    font-size: 15px !important;
+  }
+
+  main nav ul {
+    width: 50%;
+  }
+
+  .mainRow {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .mainText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--title);
+  }
+}

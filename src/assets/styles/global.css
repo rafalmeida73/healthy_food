@@ -1,0 +1,31 @@
+:root {
+  --background-dark: #FAFAFC;
+  --primary: #a7df63;
+  --primary-dark: #6bbc61;
+  --title: #2f2959;
+
+  --good: #96c93d;
+  --reasonable: #ffe000;
+  --bad: #f44336;
+
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
