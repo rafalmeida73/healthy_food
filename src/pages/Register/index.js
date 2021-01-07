@@ -48,7 +48,7 @@ function Register() {
             if (number === "") {
                 setNumberError(true);
             }
-        } else if (street == "") {
+        } else if (street === "") {
             setCepError(true)
         }
 
@@ -175,7 +175,7 @@ function Register() {
                 <form onSubmit={handleSubmit}>
                     <div className="col s12 m12 l12">
                         <TextField
-                            id="outlined-basic"
+                            id="name"
                             label="Name"
                             variant="outlined"
                             name="name"
@@ -186,7 +186,7 @@ function Register() {
                     </div>
 
                     <div className="col s12 m12 l12">
-                        <TextField id="outlined-basic"
+                        <TextField id="birth"
                             label="Date of birth"
                             variant="outlined"
                             type="date"
@@ -202,7 +202,7 @@ function Register() {
 
                     <div className="col s12 m12 l12">
                         <TextField
-                            id="outlined-basic"
+                            id="cpf"
                             label="Cpf"
                             variant="outlined"
                             name="cpf"
@@ -215,7 +215,7 @@ function Register() {
 
                     <div className="col s12 m12 l12">
                         <TextField
-                            id="outlined-basic"
+                            id="cep"
                             label="CEP"
                             variant="outlined"
                             name="cep"
@@ -230,19 +230,18 @@ function Register() {
                     <div className="col s12 m12 l12">
                         <TextField
                             disabled
-                            id="outlined-basic"
+                            id="street"
                             label="Street"
                             name="street"
                             variant="outlined"
                             value={street}
-                            name="street"
                             onChangeCapture={e => setStreet(e.target.value)}
                         />
                     </div>
 
                     <div className="col s12 m12 l12">
                         <TextField
-                            id="outlined-basic"
+                            id="number"
                             label="Number"
                             name="number"
                             value={number}
@@ -254,7 +253,7 @@ function Register() {
 
                     <div className="col s12 m12 l12">
                         <TextField
-                            id="outlined-basic"
+                            id="complement"
                             label="Complement"
                             name="complement"
                             variant="outlined"
@@ -265,7 +264,7 @@ function Register() {
                     <div className="col s12 m12 l12">
                         <TextField
                             disabled
-                            id="outlined-basic"
+                            id="neighborhood"
                             label="Neighborhood"
                             name="neighborhood"
                             variant="outlined"
@@ -277,7 +276,7 @@ function Register() {
                     <div className="col s12 m12 l12">
                         <TextField
                             disabled
-                            id="outlined-basic"
+                            id="state"
                             label="State"
                             name="state"
                             variant="outlined"
@@ -289,7 +288,7 @@ function Register() {
                     <div className="col s12 m12 l12">
                         <TextField
                             disabled
-                            id="outlined-basic"
+                            id="uf"
                             label="UF"
                             name="uf"
                             variant="outlined"

@@ -5,8 +5,17 @@ import bloco_image_2 from '../../assets/imgs/bloco_image_2.svg';
 import bloco_image_3 from '../../assets/imgs/bloco_image_3.svg';
 import bloco_image_4 from '../../assets/imgs/bloco_image_4.svg';
 import random from '../../assets/imgs/random.svg';
+import Carousel from 'react-elastic-carousel';
+import Item from "./Item";
 
 function Blog() {
+
+   const breakPoints = [
+      { width: 1, itemsToShow: 1 },
+      { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+      { width: 768, itemsToShow: 3 },
+      { width: 1200, itemsToShow: 4 }
+   ];
 
    let posts = [
       {
@@ -29,17 +38,16 @@ function Blog() {
          img: bloco_image_3,
          author: "Bryan McGregor",
          authorImg: random
-      }
-   ];
+      },
+      {
+         id: 4,
+         title: "what are you doing with your health?",
+         img: bloco_image_4,
+         author: "Rafael Santana",
+         authorImg: random
+      },
 
-   // ,
-   //  {
-   //   id: 4,
-   //   title: "what are you doing with your health?",
-   //   img: bloco_image_4,
-   //   author: "Rafael Santana",
-   //   authorImg: random
-   //  },
+   ];
 
    return (
       <div className="blog">
@@ -48,10 +56,10 @@ function Blog() {
          <br />
          Vokalia and Consonantia, there live the blind texts.</p>
          <div className="center-align blogContainer">
-            <div className="row">
+            <Carousel breakPoints={breakPoints}>
                {posts.map(post => {
                   return (
-                     <div>
+                     <Item>
                         <a key={post.id} href="/#" className="blogContent">
                            <div className="col s12 m4 l4">
                               <div className="imgBlog">
@@ -64,10 +72,10 @@ function Blog() {
                               </div>
                            </div>
                         </a>
-                     </div>
+                     </Item>
                   )
                })}
-            </div>
+            </Carousel>
          </div>
       </div>
    );

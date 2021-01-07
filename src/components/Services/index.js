@@ -10,7 +10,7 @@ function Services() {
   <div className="services">
    <div className="row">
     <div className="col s7 m8 l6 imgServices">
-     <img src={bloco_services} alt="Services" height="726"/>
+     <img src={bloco_services} alt="Services" height="726" />
     </div>
     <div className="col s5 m4 l6">
      <div className="serviceDesc">

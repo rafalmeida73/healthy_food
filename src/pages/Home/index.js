@@ -40,7 +40,7 @@ function Home() {
           <NavItem href="/#">
             JOIN
           </NavItem>
-            <Link to="register">REGISTER</Link>
+          <Link to="register">REGISTER</Link>
         </Navbar>
 
 

@@ -15,7 +15,7 @@
   margin-bottom: 40px;
 }
 
-.recipes .content img{
+.recipes .content img {
   width: 290px;
 }
 
@@ -62,7 +62,7 @@
   background-color: var(--primary-dark);
 }
 
-@media (min-width: 1100px) { 
+@media (min-width: 1100px) {
   .recipes .content {
     display: flex;
     align-items: center;
@@ -71,10 +71,10 @@
     margin-bottom: 40px;
   }
 
-  .recipes .content img{
+  .recipes .content img {
     width: auto;
   }
-  
+
   .recipes .recipesDesc {
     width: auto;
   }

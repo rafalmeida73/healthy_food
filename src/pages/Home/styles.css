@@ -10,7 +10,7 @@ main nav {
   box-shadow: none;
 }
 
-nav ul a:focus{
+nav ul a:focus {
   background-color: #fff !important;
   color: var(--primary-dark);
 }
