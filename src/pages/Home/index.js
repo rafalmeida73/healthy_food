@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css';
-import { Navbar, NavItem, Icon, Button } from 'react-materialize';
+import { Navbar, Icon, Button } from 'react-materialize';
 import { Link } from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import Recipes from '../../components/Recipes';
@@ -31,16 +31,18 @@ function Home() {
             preventScrolling: true
           }}
         >
-          <NavItem href="/#">
+          <Link to="/">
             HEALTHY RECIPES
-          </NavItem>
-          <NavItem href="/#">
+          </Link>
+          <Link to="/">
             BLOG
-          </NavItem>
-          <NavItem href="/#">
+          </Link>
+          <Link to="/">
             JOIN
-          </NavItem>
-          <Link to="register">REGISTER</Link>
+          </Link>
+          <Link to="register">
+            REGISTER
+            </Link>
         </Navbar>
 
 
@@ -51,7 +53,7 @@ function Home() {
               <div className="row">
                 <form onSubmit="">
                   <div>
-                    <TextField id="outlined-basic" label="Seacrh healthy recipes" variant="outlined" />
+                    <TextField id="search" label="Search healthy recipes" variant="outlined" />
                     <Button
                       node="button"
                       waves="light"

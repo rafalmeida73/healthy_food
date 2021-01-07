@@ -12,7 +12,7 @@ function Membership() {
           <h3>Join our membership <br /> to get special offer</h3>
           <div className="row">
             <form onSubmit="">
-              <TextField id="outlined-basic" label="Seacrh healthy recipes" variant="outlined" />
+              <TextField id="SearchMembership" label="Seacrh healthy recipes" variant="outlined" />
               <Button
                 node="button"
                 waves="light"

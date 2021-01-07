@@ -7,6 +7,7 @@ import bloco_image_4 from '../../assets/imgs/bloco_image_4.svg';
 import random from '../../assets/imgs/random.svg';
 import Carousel from 'react-elastic-carousel';
 import Item from "./Item";
+import { Link } from 'react-router-dom';
 
 function Blog() {
 
@@ -60,7 +61,7 @@ function Blog() {
                {posts.map(post => {
                   return (
                      <Item>
-                        <a key={post.id} href="/#" className="blogContent">
+                        <Link key={post.id} to="/" className="blogContent">
                            <div className="col s12 m4 l4">
                               <div className="imgBlog">
                                  <img className="imgBlog" src={post.img} alt={post.title} />
@@ -71,7 +72,7 @@ function Blog() {
                                  </div>
                               </div>
                            </div>
-                        </a>
+                        </Link>
                      </Item>
                   )
                })}

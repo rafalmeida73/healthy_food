@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -11,8 +12,8 @@ function Header() {
           <p>© Copyrights 2019 Stack. All Rights Reserved</p>
         </div>
         <div className="col s12 m6 l6 links">
-          <a href="/#">Privacy Policy</a>
-          <a href="/#">Terms and Conditions</a>
+          <Link to="/">Privacy Policy</Link>
+          <Link to="/">Terms and Conditions</Link>
         </div>
       </div>
     </footer>

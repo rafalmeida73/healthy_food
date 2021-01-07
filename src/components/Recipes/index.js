@@ -46,7 +46,6 @@ function Recipes() {
 
                {recipes.map(recipe => {
                   return (
-
                      <div key={recipe.id} className="col s12 m6 l6 content">
                         <img src={recipe.img} alt={recipe.name} />
                         <div className="recipesDesc">
