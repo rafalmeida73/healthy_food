@@ -52,7 +52,7 @@ function Blog() {
                {posts.map(post => {
                   return (
                      <div>
-                        <a key={post.id} href="" className="blogContent">
+                        <a key={post.id} href="/#" className="blogContent">
                            <div className="col s12 m4 l4">
                               <div className="imgBlog">
                                  <img className="imgBlog" src={post.img} alt={post.title} />

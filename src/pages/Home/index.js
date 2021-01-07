@@ -3,6 +3,7 @@ import './styles.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css';
 import { Navbar, NavItem, Icon, Button } from 'react-materialize';
+import { Link } from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import Recipes from '../../components/Recipes';
 import Services from '../../components/Services';
@@ -15,7 +16,7 @@ function Home() {
       <main>
         <Navbar
           alignLinks="right"
-          brand={<a className="brand-logo" href="#">Healthy Food</a>}
+          brand={<Link to="/" className="brand-logo" href="#">Healthy Food</Link>}
           id="mobile-nav"
           menuIcon={<Icon>menu</Icon>}
           options={{
@@ -30,18 +31,16 @@ function Home() {
             preventScrolling: true
           }}
         >
-          <NavItem href="">
+          <NavItem href="/#">
             HEALTHY RECIPES
           </NavItem>
-          <NavItem href="">
+          <NavItem href="/#">
             BLOG
           </NavItem>
-          <NavItem href="">
+          <NavItem href="/#">
             JOIN
           </NavItem>
-          <NavItem href="">
-            REGISTER
-          </NavItem>
+            <Link to="register">REGISTER</Link>
         </Navbar>
 
 

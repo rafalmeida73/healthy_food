@@ -1,0 +1,45 @@
+.register {
+  margin: 50px 0;
+}
+
+.register .MuiFormControl-root {
+  width: 85%;
+  margin-bottom: 30px;
+}
+
+.register form input {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.register button {
+  background-color: var(--primary);
+  display: flex;
+  margin-left: 7.5%;
+  text-transform: none;
+}
+
+.register button:hover,
+.register button:active,
+.register button:focus {
+  background-color: var(--primary-dark);
+}
+
+.mainRegister .mainText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--title);
+}
+
+.alerts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alerts .alert {
+  width: 85%;
+}

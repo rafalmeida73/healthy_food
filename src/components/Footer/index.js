@@ -11,8 +11,8 @@ function Header() {
           <p>© Copyrights 2019 Stack. All Rights Reserved</p>
         </div>
         <div className="col s12 m6 l6 links">
-          <a href="">Privacy Policy</a>
-          <a href="">Terms and Conditions</a>
+          <a href="/#">Privacy Policy</a>
+          <a href="/#">Terms and Conditions</a>
         </div>
       </div>
     </footer>
