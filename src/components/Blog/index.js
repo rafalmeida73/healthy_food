@@ -60,8 +60,8 @@ function Blog() {
             <Carousel breakPoints={breakPoints}>
                {posts.map(post => {
                   return (
-                     <Item>
-                        <Link key={post.id} to="/" className="blogContent">
+                     <Item key={post.id}>
+                        <Link  to="/" className="blogContent">
                            <div className="col s12 m4 l4">
                               <div className="imgBlog">
                                  <img className="imgBlog" src={post.img} alt={post.title} />
